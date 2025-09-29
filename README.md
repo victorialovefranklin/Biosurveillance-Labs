@@ -10,11 +10,12 @@ The labs use real-world data from:
 - **CDC COVID-NET** – Clinical case and hospitalization data  
 
 The sequence is designed to build progressively:
-1. **Secure data handling**  
-2. **Data cleaning and exploratory analysis**  
-3. **Machine learning and anomaly detection**  
-4. **Interactive dashboards and GIS mapping**  
-5. **Bioinformatics and AI-driven applications**  
+1. **GitHub Setup & Repository Forking**
+2. **Secure data handling**  
+3. **Data cleaning and exploratory analysis**  
+4. **Machine learning and anomaly detection**  
+5. **Interactive dashboards and GIS mapping**  
+6. **Bioinformatics and AI-driven applications**  
 
 Together, these labs provide a complete workflow for understanding how biosurveillance data can be collected, processed, modeled, and translated into insights.
 
@@ -23,12 +24,13 @@ Together, these labs provide a complete workflow for understanding how biosurvei
 ## Lab Sequence 
 
 ### Phase 1 — Foundations
-1. **Lab 1: Secure Storage & Access Control**  
+1. **Lab 1** GitHub Setup & Repository Forking
+   - **Deliverable:** Create a GitHub account, set up your first repository, and link it to Google Colab for submitting labs.
+   - **Focus:** Repository forking and version control to support reproducible science.
+2. **Lab 2:** Secure Storage & Access Control  
    - **Deliverable:** Secure Google Drive folder, Activity log screenshot.  
    - **Focus:** Least privilege, restricted links, audit trail.  
 
-2. **Lab 2: Retrieval in Colab**  
-   - **Deliverable:** Colab notebook that mounts Drive and loads the 3 CSVs, quick data check.  
 
 ---
 
