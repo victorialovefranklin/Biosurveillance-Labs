@@ -1,4 +1,4 @@
-# Biosurveillance Labs: Viral RNA (COVID-19) with Google Colab & Python
+# CyberInfrastructure & Data Analysis for Viral RNA (COVID-19)Surveillance with Google Colab & Python
 
 ## 📖 About
 This repository contains a series of **hands-on labs** designed to teach secure data handling, analysis, and visualization techniques for **wastewater viral RNA biosurveillance**.  
