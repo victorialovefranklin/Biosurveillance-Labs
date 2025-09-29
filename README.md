@@ -1,14 +1,13 @@
-# CyberInfrastructure & Data Analysis for Viral RNA (COVID-19)Surveillance with Google Colab & Python
+# CyberInfrastructure & Data Analysis for Viral RNA (COVID-19) Surveillance with Google Colab & Python
 
-## 📖 About
+## About
 This repository contains a series of **hands-on labs** designed to teach secure data handling, analysis, and visualization techniques for **wastewater viral RNA biosurveillance**.  
-By working through these labs, you will learn how to manage real datasets, apply data science and machine learning methods, build dashboards, and explore bioinformatics tools that connect **wastewater surveillance to public health decision-making**.  
 
-## 🧭 Introduction
+## Introduction
 The labs use real-world data from:
-- **CDC NWSS** – wastewater SARS-CoV-2 viral RNA trends  
+- **CDC NWSS** – Wastewater viral activity level (WVAL) of SARS-CoV-2 viral RNA trends  
 - **WastewaterSCAN** – SARS-CoV-2 variant and gene-level detections  
-- **CDC COVID-NET** – clinical case and hospitalization data  
+- **CDC COVID-NET** – Clinical case and hospitalization data  
 
 The sequence is designed to build progressively:
 1. **Secure data handling**  
@@ -21,15 +20,15 @@ Together, these labs provide a complete workflow for understanding how biosurvei
 
 ---
 
-## 🔄 Updated Lab Sequence
+## Lab Sequence 
 
 ### Phase 1 — Foundations
 1. **Lab 1: Secure Storage & Access Control**  
-   - Deliverable: Secure Google Drive folder, Activity log screenshot.  
-   - Focus: Least privilege, restricted links, audit trail.  
+   - **Deliverable:** Secure Google Drive folder, Activity log screenshot.  
+   - **Focus:** Least privilege, restricted links, audit trail.  
 
 2. **Lab 2: Retrieval in Colab**  
-   - Deliverable: Colab notebook that mounts Drive and loads the 3 CSVs, quick data check.  
+   - **Deliverable:** Colab notebook that mounts Drive and loads the 3 CSVs, quick data check.  
 
 ---
 
