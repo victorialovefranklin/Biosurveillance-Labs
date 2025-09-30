@@ -1,67 +1,139 @@
-# CyberInfrastructure & Data Analysis for COVID-19 Surveillance  
-*with Google Colab & Python*  
+CyberInfrastructure, Machine Learning, Outlier Detection, Gene Marker Visualization & Public Health Policy Analysis for COVID-19 Surveillance
 
-## About  
-This repository contains a series of **hands-on labs** focused on secure data handling, analysis, and visualization for **wastewater viral RNA biosurveillance**.  
+with Google Colab & Python
 
-- **Clean data**: Use clean datasets for baseline forecasting and trend modeling.
-- **Outlier data**: Use outlier datasets for anomaly-driven biosurveillance: early outbreak detection, rare-event tracking, and policy evaluation.
-Together, these approaches provide a **full picture** of public health: long-term baselines and short-term anomaly detection.  
+📖 About
 
----
+This repository contains a series of hands-on labs that demonstrate secure data handling, analysis, and visualization workflows for COVID-19 biosurveillance.
+It combines:
 
-## Introduction  
-The labs make use of real-world datasets:  
-- **CDC NWSS** — Wastewater Viral Activity Levels (WVAL) of SARS-CoV-2  
-- **WastewaterSCAN** — Variant and gene-level detections of SARS-CoV-2  
-- **CDC COVID-NET** — Clinical cases and hospitalization records  
+Wastewater viral RNA (biosurveillance for early outbreak detection)
 
-**The sequence builds progressively:**  
-1. GitHub setup & Colab integration  
-2. Secure data handling & access control  
-3. Data preprocessing & outlier detection  
-4. Trend analysis using cleaned data  
-5. Anomaly/event-driven biosurveillance using outlier data  
+Clinical hospitalization data (burden and age risk analysis)
 
----
+Genomic markers (SARS-CoV-2 gene targets and 3D protein visualization from the PDB database)
 
-## Lab Sequence  
+Machine learning models (trend forecasting, anomaly detection, and risk classification)
 
-### Phase 1 — Foundations  
-1. **Lab 1: GitHub Setup & Repository Forking**  
-   - *Deliverable:* GitHub account + repository linked to Colab  
-   - *Focus:* Version control & reproducible workflows  
+Approach:
 
-2. **Lab 2: Secure Storage & Access Control**  
-   - *Deliverable:* Secure Google Drive folder + activity log screenshot  
-   - *Focus:* Principles of least privilege, restricted access, and audit trails  
+Clean datasets → establish baselines, trends, and forecasts.
 
----
+Outlier datasets → study rare, extreme, or early-warning events.
 
-### Phase 2 — Data Cleaning & Exploratory Analysis  
-3. **Lab 3: Process & Clean Data**  
-   - *Deliverable:* Cleaned CSV files + preprocessing code (handle missing values, types, outliers, standardization)  
+Gene-level analysis → visualize spike proteins and target vaccine sites.
 
-4. **Trend Analysis (Clean Data)**  
-   - *Goal:* Identify baseline shifts, seasonal trends, and long-term epidemiological patterns  
+Clinical burden analysis → determine which age groups are most at risk and guide vaccination priorities.
 
-5. **Outlier & Anomaly Detection (Outlier Data)**  
-   - *Goal:* Detect rare events, spikes, and unusual signals to support outbreak forecasting and public health interventions  
+📊 Introduction
 
----
+Datasets used:
 
-## Author  
-**Victoria Love Franklin**  
-Ph.D. Pre-Candidate in Data Science | Research Focus: Biomedical Applications & Biosurveillance  
+CDC NWSS — Wastewater Viral Activity Levels (WVAL) of SARS-CoV-2
 
-📅 **Last Updated:** September 29, 2025  
+WastewaterSCAN — Variant and gene marker detections (S, N, ORF1ab, spike proteins)
 
----
+CDC COVID-NET — Clinical cases and hospitalizations, stratified by age groups
 
-## 📂 Repository Structure  
-```bash
-├── Lab1_Intro.ipynb                 # GitHub & Colab setup
-├── Lab2_Secure_Storage.ipynb        # Secure storage & access control
-├── Lab3_Process_Clean_Outliers.ipynb # Data preprocessing & outlier detection
-├── data/                            # Example raw data files
-├── results/
+With integrated workflows, you can:
+
+Detect outliers & anomalies in biosurveillance data
+
+Benchmark forecasting models (ARIMA, Random Forest, XGBoost)
+
+Visualize spike proteins in 3D (via PDB database and py3Dmol)
+
+Analyze age-based clinical burden to identify priority groups for vaccination
+
+🔬 Lab Sequence
+Phase 1 — Foundations
+
+Lab 1: GitHub Setup & Repository Forking
+
+Deliverable: GitHub repo linked to Colab
+
+Focus: Version control & reproducible workflows
+
+Lab 2: Secure Storage & Access Control
+
+Deliverable: Secure Google Drive folder + activity log
+
+Focus: Restricted access, least privilege, audit trail
+
+Phase 2 — Data Preprocessing & Outlier Detection
+
+Lab 3: Process & Clean Data
+
+Deliverable: Cleaned CSV files (missing values, type handling, standardization, outlier removal)
+
+Focus: Prepare datasets for modeling
+
+Lab 4: Model Benchmarking
+
+Models: ARIMA (SARIMAX), Random Forest, XGBoost
+
+Validation: Walk-forward (expanding window)
+
+Metrics: RMSE, MAE, R²
+
+Deliverable: Comparison tables + visualizations
+
+Phase 3 — Outlier Dynamics & Rare-Event Modeling
+
+Lab 5: Outlier Dynamics with Markov Chains
+
+Normal ↔ Outlier state transitions
+
+Persistence analysis & transition matrices
+
+Lead/lag analysis: wastewater → clinical
+
+Lab 6: Gene Marker Detection & Protein Visualization
+
+Detect SARS-CoV-2 gene markers (S, N, ORF1ab, Spike)
+
+Visualize spike protein structure from PDB (6VSB) in 3D using py3Dmol
+
+Map target points relevant for vaccine binding
+
+Phase 4 — Epidemiological & Policy Analysis
+
+Lab 7: Age-Risk and Vaccination Prioritization
+
+Analyze clinical cases by age group
+
+Identify which groups show the highest burden (hospitalizations/ER visits)
+
+Recommend vaccination focus based on burden analysis
+
+Lab 8: Advanced Epidemiology & Policy
+
+Burden Analysis: Outlier vs. baseline weeks
+
+Disparities: Link outliers with SDOH/EJScreen
+
+Policy Impact: Spikes linked to interventions (mask mandates, vaccine campaigns, emissions testing)
+
+Seasonality: Outlier clustering by season
+
+👩‍🔬 Author
+
+Victoria Love Franklin
+Ph.D. Pre-Candidate in Data Science | Research Focus: Biomedical Applications, Biosurveillance, Genomics, and Policy Analysis
+
+📅 Last Updated: September 30, 2025
+
+📂 Repository Structure
+├── Lab1_Intro.ipynb                     # GitHub setup
+├── Lab2_Secure_Storage.ipynb            # Secure storage
+├── Lab3_Process_Clean_Outliers.ipynb    # Preprocessing & outlier detection
+├── Lab4_Model_Benchmarking.ipynb        # ARIMA, RF, XGBoost
+├── Lab5_Markov_Outlier_Transitions.ipynb # Outlier dynamics & Markov chains
+├── Lab6_GeneMarkers_AgeRisk.ipynb       # Gene marker detection & 3D spike visualization
+├── Lab7_AgeRisk_BurdenVaccination.ipynb # Age risk analysis & vaccine targeting
+├── Lab8_Policy_Analysis.ipynb           # Epidemiological & policy insights
+├── data/                                # Input datasets
+├── results/                             # Outputs (figures, tables, exports)
+
+
+⚡ Highlight: This updated workflow now links gene marker detection (PDB + WastewaterSCAN) with age-risk burden analysis to provide actionable vaccination strategies alongside anomaly detection and forecasting.
