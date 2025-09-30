@@ -1,6 +1,7 @@
-  # CyberInfrastructure, Machine Learning, Outlier Detection, Gene Marker Visualization & Public Health Policy Analysis for COVID-19 Surveillance  
+  # COVID-19 Biosurveillance: Machine Learning, Outlier Dynamics, Gene Marker Visualization & Policy Insights
 *with Google Colab & Python*  
 
+Integrating wastewater, genomic, and clinical surveillance data to detect anomalies, forecast trends, and guide vaccination and policy strategies for COVID-19.
 ---
 
 ## About  
