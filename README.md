@@ -1,129 +1,102 @@
-CyberInfrastructure, Machine Learning, Outlier Detection, Gene Marker Visualization & Public Health Policy Analysis for COVID-19 Surveillance
+  # CyberInfrastructure, Machine Learning, Outlier Detection, Gene Marker Visualization & Public Health Policy Analysis for COVID-19 Surveillance  
+*with Google Colab & Python*  
 
-with Google Colab & Python
+---
 
-📖 About
+## About  
+This repository contains a series of **hands-on labs** demonstrating secure data handling, analysis, and visualization workflows for **COVID-19 biosurveillance**.  
 
-This repository contains a series of hands-on labs that demonstrate secure data handling, analysis, and visualization workflows for COVID-19 biosurveillance.
-It combines:
+It integrates:  
+- **Wastewater viral RNA** → biosurveillance for early outbreak detection  
+- **Clinical hospitalization data** → burden & age-risk analysis  
+- **Genomic markers** → SARS-CoV-2 gene targets and **3D protein visualization** from the PDB database  
+- **Machine learning models** → trend forecasting, anomaly detection, and risk classification  
 
-Wastewater viral RNA (biosurveillance for early outbreak detection)
+**Approach:**  
+- **Clean datasets** → establish baselines, trends, and forecasts  
+- **Outlier datasets** → study rare, extreme, or early-warning events  
+- **Gene-level analysis** → visualize spike proteins and vaccine target sites  
+- **Clinical burden analysis** → determine which age groups are most at risk and guide vaccination priorities  
 
-Clinical hospitalization data (burden and age risk analysis)
+---
 
-Genomic markers (SARS-CoV-2 gene targets and 3D protein visualization from the PDB database)
+## Introduction  
+**Datasets used:**  
+- **CDC NWSS** — Wastewater Viral Activity Levels (WVAL) of SARS-CoV-2  
+- **WastewaterSCAN** — Variant and gene marker detections (S, N, ORF1ab, Spike proteins)  
+- **CDC COVID-NET** — Clinical cases and hospitalizations, stratified by age groups  
 
-Machine learning models (trend forecasting, anomaly detection, and risk classification)
+**Integrated workflows allow you to:**  
+- Detect **outliers & anomalies** in biosurveillance data  
+- Benchmark forecasting models (ARIMA, Random Forest, XGBoost)  
+- Visualize **spike proteins in 3D** (via PDB database + py3Dmol)  
+- Analyze **age-based clinical burden** to identify **priority groups for vaccination**  
 
-Approach:
+---
 
-Clean datasets → establish baselines, trends, and forecasts.
+## Lab Sequence  
 
-Outlier datasets → study rare, extreme, or early-warning events.
+### Phase 1 — Foundations  
+**Lab 1: GitHub Setup & Repository Forking**  
+- Deliverable: GitHub repo linked to Colab  
+- Focus: Version control & reproducible workflows  
 
-Gene-level analysis → visualize spike proteins and target vaccine sites.
+**Lab 2: Secure Storage & Access Control**  
+- Deliverable: Secure Google Drive folder + activity log  
+- Focus: Restricted access, least privilege, audit trail  
 
-Clinical burden analysis → determine which age groups are most at risk and guide vaccination priorities.
+---
 
-📊 Introduction
+### Phase 2 — Data Preprocessing & Outlier Detection  
+**Lab 3: Process & Clean Data**  
+- Deliverable: Cleaned CSV files (handle missing values, types, outliers, standardization)  
+- Focus: Prepare datasets for modeling  
 
-Datasets used:
+**Lab 4: Model Benchmarking**  
+- Models: ARIMA (SARIMAX), Random Forest, XGBoost  
+- Validation: Walk-forward (expanding window)  
+- Metrics: RMSE, MAE, R²  
+- Deliverable: Comparison tables + visualizations  
 
-CDC NWSS — Wastewater Viral Activity Levels (WVAL) of SARS-CoV-2
+---
 
-WastewaterSCAN — Variant and gene marker detections (S, N, ORF1ab, spike proteins)
+### Phase 3 — Outlier Dynamics & Rare-Event Modeling  
+**Lab 5: Outlier Dynamics with Markov Chains**  
+- Normal ↔ Outlier state transitions  
+- Persistence analysis & transition matrices  
+- Lead/lag analysis: wastewater → clinical  
 
-CDC COVID-NET — Clinical cases and hospitalizations, stratified by age groups
+**Lab 6: Gene Marker Detection & Protein Visualization**  
+- Detect SARS-CoV-2 gene markers (S, N, ORF1ab, Spike)  
+- Visualize **Spike protein (PDB: 6VSB)** in **3D** using py3Dmol  
+- Map **target points relevant for vaccine binding**  
 
-With integrated workflows, you can:
+---
 
-Detect outliers & anomalies in biosurveillance data
+### Phase 4 — Epidemiological & Policy Analysis  
+**Lab 7: Age-Risk and Vaccination Prioritization**  
+- Analyze clinical cases by age group  
+- Identify which groups show the highest burden (hospitalizations/ER visits)  
+- Recommend vaccination focus based on **burden analysis**  
 
-Benchmark forecasting models (ARIMA, Random Forest, XGBoost)
+**Lab 8: Advanced Epidemiology & Policy**  
+- Burden Analysis: Outlier vs. baseline weeks  
+- Disparities: Link outliers with SDOH/EJScreen  
+- Policy Impact: Spikes linked to interventions (mask mandates, vaccine campaigns, emissions testing termination)  
+- Seasonality: Outlier clustering by season  
 
-Visualize spike proteins in 3D (via PDB database and py3Dmol)
+---
 
-Analyze age-based clinical burden to identify priority groups for vaccination
+## Author  
+**Victoria Love Franklin**  
+*Ph.D. Pre-Candidate in Data Science | Research Focus: Biomedical Applications, Biosurveillance, Genomics & Policy Analysis*  
 
-🔬 Lab Sequence
-Phase 1 — Foundations
+**Last Updated:** September 30, 2025  
 
-Lab 1: GitHub Setup & Repository Forking
+---
 
-Deliverable: GitHub repo linked to Colab
-
-Focus: Version control & reproducible workflows
-
-Lab 2: Secure Storage & Access Control
-
-Deliverable: Secure Google Drive folder + activity log
-
-Focus: Restricted access, least privilege, audit trail
-
-Phase 2 — Data Preprocessing & Outlier Detection
-
-Lab 3: Process & Clean Data
-
-Deliverable: Cleaned CSV files (missing values, type handling, standardization, outlier removal)
-
-Focus: Prepare datasets for modeling
-
-Lab 4: Model Benchmarking
-
-Models: ARIMA (SARIMAX), Random Forest, XGBoost
-
-Validation: Walk-forward (expanding window)
-
-Metrics: RMSE, MAE, R²
-
-Deliverable: Comparison tables + visualizations
-
-Phase 3 — Outlier Dynamics & Rare-Event Modeling
-
-Lab 5: Outlier Dynamics with Markov Chains
-
-Normal ↔ Outlier state transitions
-
-Persistence analysis & transition matrices
-
-Lead/lag analysis: wastewater → clinical
-
-Lab 6: Gene Marker Detection & Protein Visualization
-
-Detect SARS-CoV-2 gene markers (S, N, ORF1ab, Spike)
-
-Visualize spike protein structure from PDB (6VSB) in 3D using py3Dmol
-
-Map target points relevant for vaccine binding
-
-Phase 4 — Epidemiological & Policy Analysis
-
-Lab 7: Age-Risk and Vaccination Prioritization
-
-Analyze clinical cases by age group
-
-Identify which groups show the highest burden (hospitalizations/ER visits)
-
-Recommend vaccination focus based on burden analysis
-
-Lab 8: Advanced Epidemiology & Policy
-
-Burden Analysis: Outlier vs. baseline weeks
-
-Disparities: Link outliers with SDOH/EJScreen
-
-Policy Impact: Spikes linked to interventions (mask mandates, vaccine campaigns, emissions testing)
-
-Seasonality: Outlier clustering by season
-
-👩‍🔬 Author
-
-Victoria Love Franklin
-Ph.D. Pre-Candidate in Data Science | Research Focus: Biomedical Applications, Biosurveillance, Genomics, and Policy Analysis
-
-📅 Last Updated: September 30, 2025
-
-📂 Repository Structure
+## Repository Structure  
+```bash
 ├── Lab1_Intro.ipynb                     # GitHub setup
 ├── Lab2_Secure_Storage.ipynb            # Secure storage
 ├── Lab3_Process_Clean_Outliers.ipynb    # Preprocessing & outlier detection
@@ -135,5 +108,5 @@ Ph.D. Pre-Candidate in Data Science | Research Focus: Biomedical Applications, B
 ├── data/                                # Input datasets
 ├── results/                             # Outputs (figures, tables, exports)
 
-
-⚡ Highlight: This updated workflow now links gene marker detection (PDB + WastewaterSCAN) with age-risk burden analysis to provide actionable vaccination strategies alongside anomaly detection and forecasting.
+# Highlight:
+This updated workflow now links genomic insights (PDB + WastewaterSCAN) with clinical burden analysis to deliver actionable vaccination strategies while also supporting forecasting and anomaly detection for COVID-19 biosurveillance.
