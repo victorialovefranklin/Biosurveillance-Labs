@@ -4,9 +4,8 @@
 ## About  
 This repository contains a series of **hands-on labs** focused on secure data handling, analysis, and visualization for **wastewater viral RNA biosurveillance**.  
 
-- **Clean data** → used for general trends, forecasting, and baseline health analysis  
-- **Outlier data** → used for anomaly detection, rare events, and early outbreak warnings  
-
+- **Clean data**: Use clean datasets for baseline forecasting and trend modeling.
+- **Outlier data**: Use outlier datasets for anomaly-driven biosurveillance: early outbreak detection, rare-event tracking, and policy evaluation.
 Together, these approaches provide a **full picture** of public health: long-term baselines and short-term anomaly detection.  
 
 ---
